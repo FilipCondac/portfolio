@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <!-- Site Meta Data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Filip Condac SE Porfolio</title>
+
+  <!-- Site Meta Data -->
+  <meta name="description" content="Filip Condac SE Porfolio">
+  <meta name="author" content="Filip Condac">
+
+  <!-- Style sheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/LogoV1.png">
+
+  <!-- Scripts -->
+  <script src="js/hamburger.js"></script>
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Left logo -->
+  <img src="img/logo.png" alt="Pro software engineer logo" class="topLogo">
+
+  <!-- Navigation Bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active zoom">Home</a>
+    <a href="about.html" class="zoom">About</a>
+    <a href="contact.html" class="zoom">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <!-- Main Poster -->
+  <img src="img/mainPoster.png" alt="Poster,Laptop with Code" class="posterImg mainPoster">
+
+  <!-- Page content starts -->
+  <p class="info">Looking for an expert in OS and APIs? Check out my projects bellow.</p>
+  <h1>Projects</h1>
+  <!-- Individual containers for each piece of content -->
+  <div class="flex-container">
+    <div class="flex-child zoom">
+      <h2>Raspbian</h2>
+      <!-- Give each image a div with unique ID in order to edit DOM in "main.js" -->
+      <div id="currentHTML">
+        <img src="img/raspbian.png" alt="raspbian logo" class="flex-img" id="img1" onmouseover="change()">
+        <!--Call change function on mouse over -->
+      </div>
+    </div>
+
+    <div class="flex-child zoom">
+      <h2>PI-Hole</h2>
+      <div id="currentHTML1">
+        <img src="img/pihole.png" alt="pihole logo" class="flex-img" onmouseover="change2()">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Second row of containers -->
+  <div class="flex-container">
+
+    <div class="flex-child zoom">
+      <h2>Cloudflare</h2>
+      <div id="currentHTML2">
+        <img src="img/cloudflare.png" alt="cloudflare" class="flex-img" onmouseover="change3()">
+      </div>
+    </div>
+
+    <div class="flex-child zoom">
+      <h2>Google Places</h2>
+      <div id="currentHTML3">
+        <img src="img/googleplaces.png" alt="google places logo" class="flex-img" onmouseover="change4()">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Calling scripts -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script src="js/topButton.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

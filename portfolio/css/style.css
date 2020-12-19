@@ -1,0 +1,340 @@
+/* Elements-------------------------------------------- */
+
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+h3{
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+footer {
+  background-color: #0e0e0e;
+  color: white;
+  width: 20rem;
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.4rem;
+}
+
+li {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/*Classes---------------------------------------------*/
+.topLogo {
+  height: auto;
+  width: 24rem;
+  float: left;
+}
+
+.mainPoster {
+  width: 90%;
+  height: 40%;
+  margin: auto;
+}
+
+.posterImg {
+  width: 100%;
+  height: 100%;
+
+}
+.boxInfo {
+  font-size: 2.2rem;
+  background-color: beige;
+  border-style: solid;
+}
+
+.info {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.h1Narrow {
+  width: 100%;
+  margin: auto;
+}
+
+.aboutContainers {
+  background-color: rgba(245, 225, 189, 0.452);
+  border: 2px solid;
+}
+
+.align {
+  float: left;
+  width: 100%;
+}
+
+.avatarPic {
+  float: left;
+  margin-right: 40px;
+  width: 450px;
+  border: solid;
+  margin-bottom: 20px;
+}
+
+.slidePic {
+  float: left;
+  margin-right: 40px;
+  width: 550px;
+  height: auto;
+  margin-bottom: 20px;
+  padding-top: 2.5rem;
+}
+
+.contactList {
+  font-size: 2rem;
+  background-color: beige;
+  margin-left: 35rem;
+  border: solid;
+}
+
+.form-horizontal {
+  background-color: beige;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
+  width: 60%;
+  margin: auto;
+  border-style: solid;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 30%;
+  height: auto;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+
+/* Containers */
+.flex-container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.flex-containerNarrow {
+  width: 85%;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
+
+.flex-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16rem;
+  height: auto;
+
+}
+
+/* Zoom Animation */
+.zoom {
+  transition: transform .2s;
+  /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
+}
+
+
+/*Top Nav------------------------------*/
+.topnav {
+
+  overflow: hidden;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #0e0e0e;
+  text-align: center;
+  padding: 5rem 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(221, 221, 221, 0.438);
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+
+  color: rgb(0, 0, 0);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+ 
+}
+
+/*Media Queries--------------------------*/
+/* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .topnav.responsive {
+    position: relative;
+
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+  }
+
+  .topnav a {
+    font-size: 1.2rem;
+
+  }
+
+  .topnav.responsive a {
+    display: block;
+    text-align: left;
+    float: none;
+
+  }
+ 
+  .topLogo {
+    width: 12rem;
+    padding-top: 2rem;
+  }
+
+
+  /* Containers */
+  .flex-container {
+    display: block;
+  }
+
+  .flex-child {
+    flex: 1;
+    margin-top: 20px;
+  }
+
+  .avatarPic {
+    margin: auto;
+    width: 100%;
+  }
+
+  .align {
+    float: none;
+  }
+
+  .content {
+    padding-top: 1rem;
+  }
+
+
+  .mediaCentered {
+    text-align: center;
+    width: 100%;
+  }
+
+  ul {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex-container h2 {
+    text-align: center;
+  }
+
+  .h1Narrow {
+    font-size: 2.5rem;
+  }
+
+  .slidePic {
+    width: 20rem;
+    height: auto;
+    margin: auto;
+    display: block;
+    float: none
+  }
+
+  .contactList {
+    margin-left: 1rem;
+    float: none;
+    font-size: 1.5rem
+  }
+
+  .form-horizontal {
+    width: 80%;
+  }
+
+  .boxInfo {
+    font-size: 1.5rem;
+  }
+
+
+}
